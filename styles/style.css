@@ -41,9 +41,15 @@ body {
   font-weight: 800;
   color: white;
 }
+.sec-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
 .pra {
   font-size: 1rem;
   color: white;
+  line-height: 20px;
 }
 
 /* <----------Reusable Classes end-------> */
@@ -180,6 +186,37 @@ body {
   background: transparent;
   color: #00ff88;
   border: 2px solid #00ff88;
+}
+
+/* banner section end  */
+
+/* Podcast section start  */
+.podcast {
+  background-color: #1a0b2e;
+}
+.podcast-main {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+
+  gap: 80px;
+}
+.podcast-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+}
+.podcast-num {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.num {
+  font-size: 3rem;
+  color: #00ff88;
 }
 
 /* responsive section  */
