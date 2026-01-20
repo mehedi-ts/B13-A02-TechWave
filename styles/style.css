@@ -35,7 +35,9 @@ body {
   font-weight: 600;
   border: none;
   color: white;
+  cursor: pointer;
 }
+
 .prim-title {
   font-size: 3.8rem;
   font-weight: 800;
@@ -105,6 +107,10 @@ body {
   text-decoration: none;
   font-size: 1rem;
   color: white;
+  transition: all 0.3s;
+}
+.nav-links ul li a:hover {
+  color: #e0bd24;
 }
 .nav-btn {
   display: flex;
@@ -121,7 +127,7 @@ body {
 /* banner section start  */
 .banner {
   /* min-width: 100%; */
-  min-height: 94vh;
+  min-height: 90vh;
   background-image: url(../assets/hero-bg.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -135,7 +141,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
   width: 550px;
 }
 .banner-img {
@@ -470,6 +477,12 @@ body {
 }
 /* mobile responsive  */
 @media screen and (max-width: 576px) {
+  .prim-title {
+    font-size: 3rem;
+  }
+  .video {
+    padding: 20px 0px;
+  }
   .sec-title {
     font-size: 2rem;
   }
@@ -477,7 +490,8 @@ body {
     font-size: 1.4rem;
   }
   .banner {
-    min-height: 92vh;
+    background-image: url(../assets/mehedi.png);
+    min-height: 669px;
   }
   .nav-btn {
     display: none;
@@ -494,10 +508,8 @@ body {
   }
 
   .banner-img {
-    width: 56%;
-  }
-  .banner {
-    background-size: 100% 100%;
+    width: 60%;
+    margin-top: 40px;
   }
   .bg-img {
     width: 70%;
