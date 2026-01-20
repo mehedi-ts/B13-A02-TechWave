@@ -85,6 +85,7 @@ body {
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
+
 .navbar {
   display: flex;
   align-items: center;
@@ -119,8 +120,8 @@ body {
 
 /* banner section start  */
 .banner {
-  /* width: 100%; */
-  height: 94vh;
+  /* min-width: 100%; */
+  min-height: 94vh;
   background-image: url(../assets/hero-bg.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -148,9 +149,21 @@ body {
 .bg-img {
   width: 100%;
   display: block;
+  animation: slowRotate 5s linear infinite;
 }
+
+@keyframes slowRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .inner-img {
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -371,7 +384,7 @@ body {
 
 .footer {
   width: 100%;
-  height: 40vh;
+  padding: 120px 0px;
   background-image: url(../assets/footer-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -425,6 +438,7 @@ body {
   .banner-img {
     width: 64%;
   }
+
   .batch {
     top: 22px;
     right: 29px;
@@ -462,6 +476,9 @@ body {
   .third-title {
     font-size: 1.4rem;
   }
+  .banner {
+    min-height: 92vh;
+  }
   .nav-btn {
     display: none;
   }
@@ -479,9 +496,22 @@ body {
   .banner-img {
     width: 56%;
   }
+  .banner {
+    background-size: 100% 100%;
+  }
+  .bg-img {
+    width: 70%;
+  }
+  .inner-img {
+    width: 29%;
+  }
   .batch {
-    top: 9px;
-    right: 3px;
+    top: 8px;
+    right: 25px;
+    padding: 5px 10px;
+
+    font-size: 14px;
+    font-weight: 500;
   }
   .podcast {
     padding: 5px 0px 60px 0px;
@@ -529,6 +559,12 @@ body {
   }
   .host {
     padding: 0px 20px;
+  }
+  .footer {
+    padding: 40px 0px;
+    background-image: url(../assets/Image\ \(1\).png);
+    background-position: center;
+    background-size: cover;
   }
   .footer-logo {
     font-size: 2.5rem;
